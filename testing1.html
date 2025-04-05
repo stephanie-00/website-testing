@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATH - Personalized AI-Based Tracking Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to PATH</h1>
+            <p>Your Personalized AI-based Tracking Hub for Courses</p>
+        </header>
+
+        <!-- User Input Section -->
+        <div id="user-input" class="form-container">
+            <h2>Tell us your name to get started</h2>
+            <form id="name-form">
+                <label for="username">Name:</label>
+                <input type="text" id="username" placeholder="Enter your name" required>
+                <button type="submit">Proceed to Course Recommendations</button>
+            </form>
+        </div>
+
+        <!-- Interest Selection Section -->
+        <div id="interest-selection" class="form-container" style="display: none;">
+            <h2>Select Your Interests</h2>
+            <form id="interest-form">
+                <label><input type="checkbox" name="interest" value="Technology"> Technology</label><br>
+                <label><input type="checkbox" name="interest" value="Business"> Business</label><br>
+                <label><input type="checkbox" name="interest" value="Health"> Health</label><br>
+                <label><input type="checkbox" name="interest" value="Arts"> Arts</label><br>
+                <label><input type="checkbox" name="interest" value="Science"> Science</label><br>
+                <label><input type="checkbox" name="interest" value="Literature"> Literature</label><br>
+                <label><input type="checkbox" name="interest" value="Psychology"> Psychology</label><br>
+                <label><input type="checkbox" name="interest" value="Engineering"> Engineering</label><br>
+                <label><input type="checkbox" name="interest" value="Mathematics"> Mathematics</label><br>
+                <label><input type="checkbox" name="interest" value="Social Sciences"> Social Sciences</label><br>
+                <label><input type="checkbox" name="interest" value="Law"> Law</label><br>
+                <label><input type="checkbox" name="interest" value="History"> History</label><br>
+                <label><input type="checkbox" name="interest" value="Music"> Music</label><br>
+                <label><input type="checkbox" name="interest" value="Photography"> Photography</label><br>
+                <label><input type="checkbox" name="interest" value="Education"> Education</label><br>
+                <label><input type="checkbox" name="interest" value="Design"> Design</label><br>
+                <label><input type="checkbox" name="interest" value="Culinary Arts"> Culinary Arts</label><br>
+                <label><input type="checkbox" name="interest" value="Travel & Tourism"> Travel & Tourism</label><br>
+                <label><input type="checkbox" name="interest" value="Sports & Fitness"> Sports & Fitness</label><br>
+                <button type="submit">Show Recommended Courses</button>
+            </form>
+        </div>
+
+        <!-- Recommended Courses Section -->
+        <div id="recommended-courses" style="display: none;">
+            <h2>Recommended Courses for You</h2>
+            <div id="courses-list"></div>
+        </div>
+
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>PATH uses AI technology to suggest courses based on your interests, prior experiences, and learning goals. Whether you're exploring new subjects or looking to specialize, we help you make informed decisions. Our recommendation engine is constantly improving as you interact with the system.</p>
+        </section>
+
+        <!-- Learn More Section -->
+        <section class="learn-more">
+            <h2>Learn More</h2>
+            <p>Get started today and explore a variety of courses that match your personal and academic interests. Our easy-to-use interface and personalized recommendations will guide you towards the most suitable courses, helping you stay on track with your educational goals.</p>
+            <button class="learn-more-btn">Start Exploring Now</button>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 PATH. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
